@@ -1,3 +1,147 @@
-body{
-    background-color: #596d88;
+body {
+    background-image: url(./images/wallpaper4.jpg);
+}
+.logo{
+    font-size: 24px;
+}
+.logo a:link,:visited{
+    text-decoration: none;
+    color:#2f365f;
+}
+
+.logo a:hover, :active{
+    color:aliceblue;
+    background-color: #4c9e9e;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: guerrilla;
+}
+
+.menu {
+    list-style: none;
+    background-color: #2a403d;
+}
+
+.menu a:visited,:link{
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+    color: white;
+}
+
+.arts {
+    position: relative;
+
+}
+
+.arts_drop {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 15px;
+    list-style: none;
+    z-index: 2;
+}
+
+.arts_drop li+li {
+    margin-top: 10px;
+}
+
+.arts_drop li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+    color: white;
+}
+
+.arts_drop li:hover {
+    background-color: #4c9e9e;
+}
+.arts:hover{
+    color: aliceblue;
+}
+.arts:hover .arts_drop {
+    display: block;
+}
+.split {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    padding: auto;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+.top_left{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-color: #2a403d;
+}
+.top_left h1,h2 {
+    margin-bottom: 0px;
+    margin-top: 0;
+    margin-left: 5px;
+    color: white;
+    font-family: alegreya;
+    font-weight: 3em;
+    letter-spacing: 0.1em;
+}
+
+.top_left h2 {
+    font-size: 2em;
+}
+.top_left h1{
+    font-size: 3em;
+}
+.image{
+    position: relative;
+    left: 80px;
+}
+
+p {
+    margin-top: 4em;
+    color: black;
+    font-family: k2d;
+    padding: auto;
+    margin-right: 2em;
+    font-size: 1.5em;
+}
+.button a:link,:visited{
+    background-color:#2a403d ;
+    text-decoration: none;
+    color: white;
+    font-family: alegreya;
+    padding: 15px,25px;
+}
+.button a:hover, :active{
+    background-color: #e0475b;
 }
